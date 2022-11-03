@@ -1,0 +1,18 @@
+name: 'Vspace Webhook'
+description: 'Send webhook to VSpace easily from github actions'
+inputs:
+  webhook-url:  # id of input
+    description: 'The Update URL you got from VSpace'
+    required: true
+  secret-key:
+    description: 'The Secret Key you got from VSpace'
+    required: true
+  messages:
+    description: 'Message you want to send from Github Actions'
+    required: true
+outputs:
+  status: # id of output
+    description: 'Status of webhook success or not'
+runs:
+  using: 'node16'
+  main: 'index.js'

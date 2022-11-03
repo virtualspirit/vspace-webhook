@@ -3,7 +3,6 @@ const github = require('@actions/github');
 
 // create post request to virtualspace api 
 const axios = require('axios');
-const qs = require('qs');
 
 async function run() {
     try {
